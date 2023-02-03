@@ -24,7 +24,7 @@ class Game {
 
   void newGame([int? testValue]) {
     _roundScore = 0;
-    _randomGuess = testValue ?? Random().nextInt(100);
+    _randomGuess = testValue ?? (Random().nextInt(100) + 1);
   }
 
   void reset([int? testValue]) {

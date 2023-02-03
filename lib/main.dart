@@ -118,6 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   textColor: Colors.white,
                   shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(14))),
+                  minWidth: double.infinity,
                   child: const Padding(
                     padding:
                         EdgeInsets.symmetric(horizontal: 18.0, vertical: 12.0),
