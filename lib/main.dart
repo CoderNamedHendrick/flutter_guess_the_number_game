@@ -116,7 +116,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   },
                   color: Theme.of(context).colorScheme.primary,
                   textColor: Colors.white,
-                  child: const Text('Submit Guess'),
+                  shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(14))),
+                  child: const Padding(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 18.0, vertical: 12.0),
+                    child: Text('Submit Guess'),
+                  ),
                 )
               ],
             ),
@@ -134,7 +140,7 @@ class _MyHomePageState extends State<MyHomePage> {
         return AlertDialog(
           content: Text(
             'Congratulations🎉🎉🎉, I guessed ${game.guess}.\nYou scored ${game.roundScore} in this round and your total score is ${game.score}',
-            style: const TextStyle(fontSize: 26, color: Colors.blueAccent),
+            style: const TextStyle(fontSize: 22, color: Colors.blueAccent),
           ),
           actions: [
             TextButton(
